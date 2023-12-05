@@ -1,2 +1,2 @@
-# Projeto-Execu-o-Financeira
+# Projeto-Execução-Financeira
 ETL/pgAdmin/Power B.I
