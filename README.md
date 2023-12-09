@@ -5,6 +5,9 @@ ETL/pgAdmin/Power B.I
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black) ![SQL](https://img.shields.io/badge/SQL-%2300758F.svg?style=for-the-badge&logo=sql&logoColor=white) ![ETL](https://img.shields.io/badge/ETL-pink?style=for-the-badge&logo=sql&logoColor=white)
 
 
+</div>
+<br>
+
 
 # PROJETO CRIAÇÃO DATA BASE, DATA WAREHOUSE E DASHBOARD
 
