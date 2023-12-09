@@ -41,11 +41,27 @@ DIMENSIONAL:
 * INCLUÍDA A PRIMEIRA LINHA CREATE TABLE AS 'NOME_TABELA', PARA TAL FUNCIONALIDADE.
 * A CRIAÇÃO SEMPRE DEVE SER FEITA EM 'DATA_WAREHOUSE', LOCAL ONDE ESTÁ O DW, COMO VIMOS DURANTE O CURSO E TAMBÉM PARA PRESERVAÇÃO DA BASE REAL, ANTES DE RECEBER O TRATAMENTO, DEVEREMOS REALIZAR A CRIAÇÃO DO DW.
 
+Sintetizando do ponto de vista de dados, realizamos os seguintes comandoa abaixo:
+
+Criação e reorganização do banco de produção:
+Create table ods.financeiro as 
+select * from execucao_financeira_despesa
+
+-------------------------------------
+Selecionar todos os dados:
+
+Select * 
+from ods.financeiro
+
+--------------------------------------
+
+# TABELA DIM_ORGAO
 
 
-# ANÁLISE EXPLORATÓRIA:
+Na análise exploratória foi indentificado orgãos com o mesmo código de orgão porém descrições diferentes. Utilizamos o select abaixo para identificar quais eram:
 
-
+Select codigo_orgao, dsc_orgao
+From execucao_financeira_despesa
 
 
 
