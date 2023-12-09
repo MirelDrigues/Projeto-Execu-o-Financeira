@@ -15,7 +15,7 @@ ETL/pgAdmin/Power B.I
 
 
 
-  - OBJETIVO:
+OBJETIVO:
     
    - Análisar as informações contidas no banco de dados, denominado execução_financeira proposto.
    - Realizar a análise exploratória dos dados inseridos; elimando nulls, ajustando valores e datas para melhor análise e lisura dos dados.
