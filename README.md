@@ -60,8 +60,32 @@ from ods.financeiro
 
 Na análise exploratória foi indentificado orgãos com o mesmo código de orgão porém descrições diferentes. Utilizamos o select abaixo para identificar quais eram:
 
-Select codigo_orgao, dsc_orgao
-From execucao_financeira_despesa
+SELECT codigo_orgao, dsc_orgao
+FROM  ods.financeiro
+GROUP BY codigo_orgao, dsc_orgao
+HAVING codigo_orgao IN ( SELECT codigo_orgao
+FROM ods.financeiro
+GROUP BY codigo_orgao
+HAVING COUNT(DISTINCT dsc_orgao) > 1)
+ORDER BY codigo_orgao ASC
+
+
+A subconsulta dentro do HAVING, tem como função selecionar os códigos de órgãos que possuem mais de uma descrição de órgão associado. 
+Em seguida, a consulta principal exibe apenas os registros que possuem um código de órgão presente na subconsulta, filtrando apenas os casos em que o código do órgão é igual, mas o nome do órgão é diferente. Resultando nas informações dos orgãos abaixo:
+
+
+
+![image](https://github.com/MirelDrigues/Projeto-Execu-o-Financeira/assets/143461673/cf24c2cb-fb7e-41c0-9084-d6f2a59b4869)
+
+
+
+
+
+
+
+
+
+
 
 
 
