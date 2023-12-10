@@ -78,6 +78,9 @@ Em seguida, a consulta principal exibe apenas os registros que possuem um códig
 ![image](https://github.com/MirelDrigues/Projeto-Execu-o-Financeira/assets/143461673/cf24c2cb-fb7e-41c0-9084-d6f2a59b4869)
 
 
+A partir da análise acima precisamos realizar a correção para a criação da DIM_ORGAO, para tanto iremos utilizar a cláusula ou função MIN, com a finalidade de  mostrar somente a menor descrição associada a código do orgão.
+
+
 
 
 
